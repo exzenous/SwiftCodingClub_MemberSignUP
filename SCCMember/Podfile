@@ -10,6 +10,7 @@ target 'SCCMember' do
   pod 'Firebase/Firestore'
   pod 'EZLoadingActivity'
 
+
 end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
