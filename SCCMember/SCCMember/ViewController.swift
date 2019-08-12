@@ -21,6 +21,7 @@ class ViewController: UIViewController{
     @IBOutlet weak var studentName: UITextField!
     @IBOutlet weak var studentYear: UITextField!
     @IBOutlet weak var studentFacebook: UITextField!
+    @IBOutlet weak var studentEmail: UITextField!
     
     
     
@@ -57,7 +58,7 @@ class ViewController: UIViewController{
         guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {return}
         let keyboardFrame = keyboardSize.cgRectValue
         if self.view.frame.origin.y == 0{
-            self.view.frame.origin.y -= keyboardFrame.height
+            self.view.frame.origin.y -= keyboardFrame.height - keyboardFrame.height/4
         }
     }
     @objc func keyboardWillHide(notification: NSNotification) {
@@ -72,7 +73,7 @@ class ViewController: UIViewController{
 
     func checkTf(){
         EZLoadingActivity.show("Loading...", disableUI: true)
-        let chk = [studentId,studentName,studentYear,studentFacebook]
+        let chk = [studentId,studentName,studentYear,studentFacebook,studentEmail]
         var pass = true
         for item in chk {
             if (item?.text!.isEmpty)!{
@@ -85,7 +86,7 @@ class ViewController: UIViewController{
             }
         }
         if pass == true{
-            self.myDb.collection("Year_\(self.studentYear.text!)").document("\(self.studentId.text!)").setData(["StudentID": self.studentId.text!, "Name": self.studentName.text!,"Year": self.studentYear.text!,"FaceBook": self.studentFacebook.text!])
+            self.myDb.collection("Year_\(self.studentYear.text!)").document("\(self.studentId.text!)").setData(["StudentID": self.studentId.text!, "Name": self.studentName.text!,"Year": self.studentYear.text!,"FaceBook": self.studentFacebook.text!,"Email": self.studentEmail.text!])
             EZLoadingActivity.show("Loading...", disableUI: true)
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 EZLoadingActivity.hide(true, animated: true)
