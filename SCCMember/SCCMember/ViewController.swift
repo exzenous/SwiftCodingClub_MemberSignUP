@@ -10,9 +10,7 @@ import UIKit
 import Firebase
 import EZLoadingActivity
 
-
 class ViewController: UIViewController{
-    
     var myDb: Firestore!
     
     @IBOutlet weak var studentId: UITextField!
