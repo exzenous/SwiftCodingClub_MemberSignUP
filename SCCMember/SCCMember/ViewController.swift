@@ -11,8 +11,6 @@ import Firebase
 import EZLoadingActivity
 
 
-
-
 class ViewController: UIViewController{
     
     var myDb: Firestore!
