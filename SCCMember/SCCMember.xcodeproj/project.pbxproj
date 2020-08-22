@@ -13,7 +13,7 @@
 		0C25462E22FFDBF1009FB368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C25462C22FFDBF1009FB368 /* Main.storyboard */; };
 		0C25463022FFDBF3009FB368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C25462F22FFDBF3009FB368 /* Assets.xcassets */; };
 		0C25463322FFDBF3009FB368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C25463122FFDBF3009FB368 /* LaunchScreen.storyboard */; };
-		0C25463B22FFE1F6009FB368 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C25463A22FFE1F6009FB368 /* GoogleService-Info.plist */; };
+		D9A2E46424F02F5E00F5DC0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9A2E46324F02F5D00F5DC0C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +24,9 @@
 		0C25462F22FFDBF3009FB368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C25463222FFDBF3009FB368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C25463422FFDBF3009FB368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C25463A22FFE1F6009FB368 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6699DD4B75FA67E950376CA4 /* Pods-SCCMember.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCCMember.debug.xcconfig"; path = "Target Support Files/Pods-SCCMember/Pods-SCCMember.debug.xcconfig"; sourceTree = "<group>"; };
 		91255D9B844A6309BD516491 /* Pods-SCCMember.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCCMember.release.xcconfig"; path = "Target Support Files/Pods-SCCMember/Pods-SCCMember.release.xcconfig"; sourceTree = "<group>"; };
+		D9A2E46324F02F5D00F5DC0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCDB501D4430460C7ABD07E5 /* Pods_SCCMember.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCCMember.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,7 +68,7 @@
 				0C25462C22FFDBF1009FB368 /* Main.storyboard */,
 				0C25462F22FFDBF3009FB368 /* Assets.xcassets */,
 				0C25463122FFDBF3009FB368 /* LaunchScreen.storyboard */,
-				0C25463A22FFE1F6009FB368 /* GoogleService-Info.plist */,
+				D9A2E46324F02F5D00F5DC0C /* GoogleService-Info.plist */,
 				0C25463422FFDBF3009FB368 /* Info.plist */,
 			);
 			path = SCCMember;
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C25463322FFDBF3009FB368 /* LaunchScreen.storyboard in Resources */,
-				0C25463B22FFE1F6009FB368 /* GoogleService-Info.plist in Resources */,
+				D9A2E46424F02F5E00F5DC0C /* GoogleService-Info.plist in Resources */,
 				0C25463022FFDBF3009FB368 /* Assets.xcassets in Resources */,
 				0C25462E22FFDBF1009FB368 /* Main.storyboard in Resources */,
 			);
@@ -355,16 +355,16 @@
 			baseConfigurationReference = 6699DD4B75FA67E950376CA4 /* Pods-SCCMember.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSG37L4FB3;
+				DEVELOPMENT_TEAM = 72QDW96HD8;
 				INFOPLIST_FILE = SCCMember/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PRAPAWITY.SCCMember2;
+				PRODUCT_BUNDLE_IDENTIFIER = nathachai.SCCTReg2020;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -377,16 +377,16 @@
 			baseConfigurationReference = 91255D9B844A6309BD516491 /* Pods-SCCMember.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSG37L4FB3;
+				DEVELOPMENT_TEAM = 72QDW96HD8;
 				INFOPLIST_FILE = SCCMember/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PRAPAWITY.SCCMember2;
+				PRODUCT_BUNDLE_IDENTIFIER = nathachai.SCCTReg2020;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
